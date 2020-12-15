@@ -1,0 +1,28 @@
+Name: Soroush Bahrami
+Student Number: 152499182
+Seneca Email: sbahrami7@myseneca.ca
+ws7
+Reflection:
+The main lesson of this workshop was Algorithm library and also the practice of using STL, Lambda functions and the other things we've 
+learned through the past few weeks. there were other libraries which were very useful such as numeric, which accumulates data values. 
+In this workshop, we had to avoid using for loops and instead we had to get into the habit of using STL iterator which is much simpler 
+and more effecient than manual loops. I did not find this workshop very difficult like I did with the last two workshops. 
+list all the STL functions that you have used in this workshop; explain your reasoning for choosing each one, and not another.
+I used std::accumulate() to find the total length of all the songs, added together. 
+I used std::copy_if() function to copy the songs objects which their artist attribute met the condition of matching the parameter to a 
+local container. this was an effecient way of doing it, because as its name suggests, we don't need to write a seperate logic and then 
+copy the objects that meet the condition, instead, in one line of code we do it in a much simpler way.
+I used std::for_each(), which iterates through all the objects and do a certain thing on them, which in our case is writing them.
+I used std::sort() algorithm to sort the container by particular fields. for example, sorting them by the length or the title.
+I used find_if() algorithm to find the objects that meet the condition.
+I used count_if() to count the number of objects that meet a certain condition.
+present the advantages of using STL algorithms vs. implementing the functionality by yourself using loops.
+First of all, using the STL algorithms saves a lot of time and lines of code, which improves its readability as well. If I hadn't have used 
+these functions, I must have had written a lot of code, which would have not been so effecient and simple as these algorithms are. 
+Secondly, these functions are reusable, which means I didn't have to write the logic over and over again, like using manual loops. 
+he function that sorts the collection of songs receives as a parameter the field name to use; this can create errors if the client
+ specifies an invalid field (or misspells it). How would you redesign that function to prevent the client to specify an invalid string, 
+allowing any error to be detected by the compiler?
+One thing that I can think of is using character instead of strings, this way it's very unlikely for the client to make a mistake. the other way 
+could be writing a logic which can look at the first character, and two last letters, and so on and so forth in a condition using ||. So if any of 
+this conditions match the client's string, the compiler understands. 
