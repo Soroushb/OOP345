@@ -1,0 +1,15 @@
+Name: Soroush Bahrami
+Student Number: 152499182
+Email: sbahrami7@myseneca.ca
+WS6P2
+reflection:
+The main lesson of this workshop was vector containers and the practice of using STL string library. There were also other useful practices, such as iterationg through containers
+and handling errors and exceptions. This workshop was the most difficult workshop for me, and I have never struggled like this before. through the last week I went through the notes 
+over and over again, but I still find the material extremely confusing when it comes to this workshop. most parts of the workshop was easy to do, but I had problem with two particluar
+parts: Car constructor which I almost finished and createInstance function. I tried hard to get both of them right till the last day which is tonight. I finally had to ask a programmer friend who is outside 
+Seneca to do them for me. Eventually he explained to me and I learned what he had done, but in terms of doing them, I did not do any of these two functions myself. in the answer of
+workshop questions, we need to deallocate memory for vector because the momory is dynamically created and its our responsibility to get rid of them in order to avoid memory leaks.
+in our loadData() function, we simply used try and catch combination to handle exceptions. in try we put the code which might cause error, and in catch we caught those errors by
+the type of them, which was a single character(tag) and the other one was const char*(a c-styled string message). the other ways to handle errors could be the basic debugging, or
+trying to print something after each part which might cause error. as far as I know, we shouldn't have used vector of objects, because first of all they are slower. because similar
+to copy constructors and move constructors, when we have vector of pointers, we don't need to reallocate the vector again and we can use push.back when we want to add to the vector.
