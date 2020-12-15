@@ -1,0 +1,28 @@
+Name : Soroush Bahrami
+Student ID: 152499182
+Seneca Email: sbahrami7@myseneca.ca
+27/9/20
+WS1P2
+Reflection:
+
+The main lesson of this workshop was the practice of using both internal and external linkages, receiving program arguments from the command line and also the review of 
+dynamic memory in part 2. I had very little difficulty finishing the first part of the program, which included the new topics of this semester. I used external linkage to refer 
+to a variable which was declared in another unit. I also used internal linkage for the counter of the program because it could held its new own value after each time the function was 
+called. the most challenging part of this workshop for me, was updating the description from static to dynamic memory. I spent a while trying to prevent memory leak, and after
+I fixed that I started getting valgrind errors which were new to me. Eventually I fixed that issue by allocating and deallocating the dynamic memory(with destructor) differently.
+The rest of the workshop was rather easy. I also learned to use new types like unsigned long and size_t. 
+
+ the difference between internal and external linkage using examples from your code: 
+in my code, I used the external linkage for g_sysClock in event.h, which was defined in event.cpp and supposed to be a global function, because our w1_p2.cpp needed it, and if I hadn't used this external linkage
+I would have errors in w1_p2.cpp, because without external linkage, it would have been an undefined variable. as I mentioned above, I used the internal linkage in the display function
+for the counter of the number of times the function is called. without internal linkage, the counter would have lost its new value and would have shown "1" which was its intial value
+ for all the events.
+
+what are static variables and how were they useful in this workshop.
+static values are invisible outside their own translation units but are visible to all the scopes inside that unit. in this workshop it was useful to keep its new value and keep 
+count of the number of times the function was called.
+
+the changes that you made in upgrading your Event class.
+Most importantly, I defined the destructor for the class, because the momory for description was now dynamically allocated and needed to be deallocated before it went out of scope. 
+the other changes were, changing the declaration of description from static array (char desc[128]) to dynamic (char* desc). I used the "new" keyword to allocate the new desc and 
+used strlen(string) + 1 to find the size of array I had to allocate for each new string. 
