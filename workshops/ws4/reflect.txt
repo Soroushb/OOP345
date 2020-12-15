@@ -1,0 +1,25 @@
+Name: Soroush Bahrami
+Student Number: 152499182
+Seneca Email: sbahrami7@myseneca.ca
+WS4
+Reflection:
+
+The main lesson of this workshop was getting to know composition and aggregation relationship that 
+exist between classes. I had to make three different modules including Reservation, Restaurant 
+and ConfirmationSender. The biggest challenge for me in this workshop, was to use string class 
+functions to separate and catch different parts of data from the text file. I spent a lot of time
+struggling with it, and eventually I had to ask for helo from a friend. Although he did the most
+of that particular function for me, eventually I learned what he did. Apart from that, I did not 
+have any problems with Restaurant module, but in ConfirmationSender module, I got quite confused
+with using pointer to a pointer(const sdds::Reservation** confirmReservation), because it was
+the first time that I was using it. 
+the difference between the implementations of a composition and an aggregation. 
+Basically, the main difference is that in composition, the classes are dependant on each other, 
+meaning that with the destruction of one the other one reaches the end as well. 
+In aggregation, however, they are independant from each other. So the destruction of one does
+not affect the other. we did this in this assignment by using a pointer to the other class.
+the difference between the implementations of move and copy functions in a composition and an aggregation.
+the difference in implementation is only that when we are allocating the memory in copy for aggregation
+we pass a pointer (this->confirmReservation = new const Reservation * [copy.confirmCount];) unlike 
+composition. this way, in aggregation, copy and move functions are not responsible for allocating 
+or deallocationg the resource, again, unlike composition.
