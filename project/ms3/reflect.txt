@@ -1,0 +1,15 @@
+Name: Soroush Bahrami
+Student number: 152499182
+Seneca Email: sbahrami7@myseneca.ca
+MS3
+reflection:
+
+This was the last and the most complex milestone of the final project. 
+One of the most important things that I learned specifically in this project was getting the input from a 
+text file, and separating its content properly and storing them in our class variables. this task in particular,
+was the most frustrating part, even though it didn't seem to bother my classmates as much. the second important 
+thing that I learned was vectors, which I really like and enjoy playing around with. A major part of this project
+was using STL libraries and iterators, which I found to be very efficient and easy to use. Apart from these,
+the rest of the project focused on practicing what we learned through this course. I also learned that sometimes
+there might be some instructions missing in the requirements where we should use our own logic to be able to solve problems
+like in this milestone. On the whole, I found this project very complex but extremely helpful.
