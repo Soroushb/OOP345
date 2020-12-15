@@ -1,0 +1,22 @@
+Name: Soroush Bahrami
+Student Number: 152499182
+Email: sbahrami7@myseneca.ca
+WS8
+reflection:
+
+This week's workshop was about smart pointers and the advantage of using them instead of using raw pointers. the other parts were 
+practices of using vectors and STL libraries. I did not have any difficulty doing this workshop, there was not much to code. We had
+to write a few functions, in which we could learn the difference between raw pointers and smart pointers. in the validation function 
+we had to throw an error if the price was negative. 
+the advantage that smart pointer syntax provides. Use example from your code to support your explanation.
+the example of it is in Utilities module. we have two functions: "mergeRaw", which builds a list of products using raw pointers.
+we see that in this function, there is a probability that we have memory leak. because begore deleting the raw pointer, there is validation 
+function which throws and exception if the data is not valid. this way, the code including delete is skipped and we have memory leak for every 
+invalid data. 
+in "mergesmart" function, however, because we are using smart pointers, there is no need for us to delete the allocated memory, because the pointer
+knows its resource, and calls the resource's destructor when it is destroyed, we do not need to explicitly delete it. this way, no matter if the data 
+is invalid and exceptions are called, the pointer is destroyed and we do not have memory leak.
+the difference between raw and smart pointer syntax in your solution.
+In my code, there are some examples of the difference between their syntax. for example, in List.h file, for the raw pointer type we only have a * between 
+the type and identifier(T* p), whereas, for smart pointers we use std::unique_ptr<T>. also, for adding them to the vector, for raw pointers we simply push_back the deferenced
+pointers, and for smart pointers we use std::move(*p). Also for allocating for smart pointers we used unique_ptr<Product> p(new Product(desc[i].desc, price[j].price)).
