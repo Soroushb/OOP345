@@ -1,0 +1,18 @@
+Name: Soroush Bahrami
+Student ID: 152499182
+Seneca Email:sbahrami7@myseneca.ca
+WS3P2
+Reflection:
+
+the main lesson of this workshop was class templates. I learned how to design and implement them, how to derive 
+another templated class from it and most importantly, how to specialize member functions of templated classes
+to do a particular thing. I did not have any difficulty doing part 1 of the workshop, however, I struggled a lot
+to figure out part 2. For instance it took me a while to find out how to overload += operator in Parisummable 
+class. Eventually I used the constructor with two parameters to add the parameter value to the current value. 
+Specialization was particularly difficult for me. I had to reread the notes and use hints to understand them. 
+The reason that we specialized operator+=() was because if the parameters are of string type,
+we will need a different format than the generic one. we specialized it to have a comma between 
+values. The reason for specializing the initial value for summation because the initial values 
+are different for different data types. for example if the data is of string type, the initial 
+value would be an empty string. However, if the data type is an integer, we initialize it to 0.
+We also define static class variables outside the class definition so that they are visible to all scopes.
