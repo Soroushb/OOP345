@@ -1,0 +1,21 @@
+Name: Soroush Bahrami
+Student Number: 152499182
+Seneca Email: sbahrami7@myseneca.ca
+ws9p2
+Reflection:
+
+the main lesson of this workshop was threads. I learned to divide the task between two separate threads. in the case 
+of this workshop, one thread processed the first half of the array while the other one was responsible for the second 
+half. the other part of this workshop was writing and reading a set of characters from a file in binary mode. this workshop
+wasn't so difficult, and it didn't take too long to complete since the major part of the code was supplied.
+why was necessary to use binary files in this workshop and how did you use them?
+I think we used binary files because it is easier and more efficient when it comes to large amount of data. when the data is
+a text and there are no delimiteres and no need for us to extract different bits of it. I used fstream object and passed to it
+std::ios::binary as a parameter for instance, fstream theFile(file, std::ios::out|std::ios::binary);
+why would be important to bind a function to its arguments, and how was it useful in this workshop?
+it is useful and efficient when that function with those parameters are repeated multiple times throughout the code.
+it makes it simpler and more readable.
+the advantages of using multiple threads, and how did you accomplished multi-threading in this workshop.
+it makes the project work faster, because it divides the tasks between different threads that can run
+simultaneously. As I mentioned, I accomplished multi-threading splitting the task into two threads. one
+worked with the first half of the array, and the other worked with the other half.
