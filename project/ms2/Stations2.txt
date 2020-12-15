@@ -1,0 +1,3 @@
+SSD|987654|5|Solid State Drive
+Power Supply|147852|20|Basic AC Power Supply
+Monitor|987|5|Monitor size 32 inches, 4K
